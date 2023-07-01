@@ -5,6 +5,7 @@ import { Home } from './Components/Home'
 import { About } from './Components/About'
 import Navbar from './Components/Navbar'
 import OrderSummary from './Components/OrderSummary'
+import NoMatch from './Components/NoMatch'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='about' element={<About />} />
         <Route path='order-summary' element={ <OrderSummary />} />
+        <Route path='*' element={<NoMatch />} />
       </Routes>
     </>
   )
