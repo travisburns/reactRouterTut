@@ -15,8 +15,8 @@ const navLinkStyles = ({ isActive }) => {
 
   return (
     <nav>
-        <NavLink style={nav.LinkStyles} to='/'> Home</NavLink>
-        <NavLink style={nav.LinkStyles} to='/about'> About</NavLink>
+        <NavLink style={navLinkStyles} to='/'> Home</NavLink>
+        <NavLink style={navLinkStyles} to='/about'> About</NavLink>
     </nav>
   )
 }
