@@ -9,6 +9,9 @@ import NoMatch from './Components/NoMatch'
 import Products from './Components/Products'
 import NewProducts from './Components/NewProducts'
 import FeaturedProducts from './Components/FeaturedProducts'
+import Users from './Components/Users'
+import UserDetails from './Components/UserDetails'
+import Admin from './Components/Admin'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,6 +30,10 @@ function App() {
             
             
           </Route> 
+          <Route path='users' element={<Users />}>
+            <Route path=':userId' element={<UserDetails />} />
+            <Route path='admin' element={<Admin />} />
+          </Route>
         <Route path='*' element={<NoMatch />} />
 
       </Routes>
