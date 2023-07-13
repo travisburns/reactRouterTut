@@ -1,8 +1,11 @@
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
-const navLinkStyles = () => {
-
+const navLinkStyles = ({ isActive }) => {
+    return {
+      fontWeight: isActive ? 'bold' : 'normal',
+      textDecoration: isActive ? 'none' : 'underline',
+    }
 }
 
 
