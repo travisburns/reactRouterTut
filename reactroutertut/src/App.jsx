@@ -4,7 +4,10 @@ import { Home } from './Components/Home'
 
 import { About } from './Components/About'
 import Navbar from './Components/Navbar';
+import OrderSummary from './Components/OrderSummary'
 function App() {
+  
+  
   return (
     <>
     
@@ -12,7 +15,8 @@ function App() {
 
 <Routes>
    <Route path='/' element={<Home />} />
-         <Route path='about' element={<About />} />
+    <Route path='about' element={<About />} />
+    <Route path="order-summary" element={<OrderSummary /> } /> 
 </Routes>
     
     </>
