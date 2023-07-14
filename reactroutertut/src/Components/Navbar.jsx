@@ -13,6 +13,7 @@ const navLinkStyles = ({ isActive }) => {
     <nav>
       <NavLink style={navLinkStyles} to="/">Home</NavLink>
       <NavLink style={navLinkStyles} to="/about">about</NavLink>
+      <NavLink style={navLinkStyles} to="/products"> Products </NavLink>
     </nav>
   )
 }
